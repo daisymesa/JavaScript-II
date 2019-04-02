@@ -1,6 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+function greeting(name) {
+	const englishGreet = "Hello"
+	console.log(`${englishGreet} ${name}!`);
 
+	function spanish() {
+		const spanishGreet = "Hola";
+		console.log(`${spanishGreet} ${name}!`);
+
+		function french() {
+			const frenchGreet = "Bonjour";
+			console.log(`${frenchGreet} ${name}!`);
+		}
+		french();
+	}
+	spanish();
+}
+greeting("Daisy");
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
@@ -8,7 +24,7 @@
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
-};
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
